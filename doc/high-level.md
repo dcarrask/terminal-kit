@@ -262,10 +262,9 @@ It produces:
 	  thus will return null
 	* style `Function` style used, default to the terminal instance (no style)
 	* hintStyle `Function` style used for hint (auto-completion preview), default to `terminal.brightBlack` (gray)
-	* maxLength `number` maximum length of the input
-	* minLength `number` minimum length of the input
+	* maxLength `number` (optional) the maximum length (in characters) of the input
+	* minLength `number` (optional) the minimum length (in characters) of the input
 	* history `Array` (optional) an history array, so UP and DOWN keys move up and down in the history
-	* maxLength `number` (optional) the maximum length (in characters) of the user input
 	* autoComplete `Array` or `Function( inputString , [callback] )` (optional) an array of possible completion,
 	  so the TAB key will auto-complete the input field. If it is a function, it should accept an input `string`
 	  and return the completed `string` (if no completion can be done, it should return the input string,
